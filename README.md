@@ -27,7 +27,7 @@ Package list
  - Ruby — `apt install ruby`
     - Ruby workshop
  - Python 3 `apt install python3`
- - Atom — `sudo apt install snapd-xdg-open && sudo snap install atom --classic`
+ - Atom `sudo apt install snap && sudo snap install atom --classic`
     - HTML & CSS for Beginners: Learn to Build a Multi-Page Website from Scratch
     - Webmaking with HTML & CSS
  - Processing — `sudo apt install curl && curl -fLo http://download.processing.org/processing-3.4-linux32.tgz`

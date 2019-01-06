@@ -8,6 +8,7 @@ APT_PACKAGES=(
     curl
     git
     realpath
+    snap
     # Packages needed/nice-to-have to run workshops
     chromium-browser
     scratch
