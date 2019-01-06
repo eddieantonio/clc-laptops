@@ -33,6 +33,13 @@ Package list
  - Processing — `sudo apt install curl && curl -fLo http://download.processing.org/processing-3.4-linux32.tgz`
 
 
+Considerations
+--------------
+
+Turn off Bluetooth.
+
+Add icons to Desktop.
+
 Updating all of the workshop repositories
 -----------------------------------------
 
