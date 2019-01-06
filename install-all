@@ -20,7 +20,7 @@ sudo apt upgrade -y
 sudo apt install -y "${APT_PACKAGES[@]}"
 
 # Install Atom
-sudo snap install -y atom --classic
+sudo snap install atom --classic
 
 # Install Processing
 installprocessing() {
