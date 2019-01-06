@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Add scripts in ./libexec/ to path, so that we can use them conveniently in
+# find and xargs.
+LIBEXEC="$(dirname "$0")/libexec"
+PATH="$LIBEXEC:$PATH"
+
+find . -type d -depth 1 -exec is-git-repo '{}' ';' -print0 |\
+    xargs -0 -n1 -P 4 update-repo

@@ -1,0 +1,34 @@
+#!/bin/bash
+
+set -ex
+
+APT_PACKAGES=(
+    # Useful system packages
+    build-essential
+    curl
+    git
+    realpath
+    # Packages needed/nice-to-have to run workshops
+    chromium-browser
+    scratch
+    python3
+    ruby
+)
+
+sudo apt update -y
+sudo apt upgrade
+sudo apt install -y "${APT_PACKAGES[*]}"
+
+# Install Atom
+sudo snap install atom --classic
+
+# Install Processing
+installprocessing() {
+    # TODO: verify SHA 384 sum
+    cd /tmp &&\
+        curl -fLo http://download.processing.org/processing-3.4-linux32.tgz &&\
+        tar xzf processing-3.4-linux32.tgz &&\
+        cd /tmp/processing-3.4-linux32 &&\
+        false
+}
+installprocessing

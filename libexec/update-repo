@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "Updating $1..." 1>&2
+cd "$1" || exit 2
+git remote -v
+git reset --hard HEAD
+git pull

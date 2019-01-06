@@ -1,0 +1,6 @@
+#!/bin/sh
+ftype="$(stat -f'%T' "$1/.git" 2>/dev/null || true)"
+if [ "$ftype" = "/" ]; then
+    exit 0
+fi
+exit 1
