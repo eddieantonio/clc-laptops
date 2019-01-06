@@ -7,7 +7,6 @@ APT_PACKAGES=(
     build-essential
     curl
     git
-    realpath
     snapd
     # Packages needed/nice-to-have to run workshops
     chromium-browser
@@ -17,11 +16,11 @@ APT_PACKAGES=(
 )
 
 sudo apt update -y
-sudo apt upgrade
-sudo apt install -y "${APT_PACKAGES[*]}"
+sudo apt upgrade -y
+sudo apt install -y "${APT_PACKAGES[@]}"
 
 # Install Atom
-sudo snap install atom --classic
+sudo snap install -y atom --classic
 
 # Install Processing
 installprocessing() {
