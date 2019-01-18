@@ -8,3 +8,10 @@ To Install Lubuntu on HP Stream 14:
  - change boot back to UEFI mode?
  - Remove "Iconify all windows" panel button.
     - Right-click » Remove "..." from Panel
+ - Turn off screen lock
+     - "Start" » Preferences » Power Manager
+        - General: On battery/Plugged in: suspend
+	- Security: Automatically lock the session: never
+ - Do not ask for password on login
+     - "Start" » System Tools » Users and Groups
+        - Learner/Password: Change... » ✔ Don't ask for password on login
