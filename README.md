@@ -1,55 +1,55 @@
 Things to do to setup loaner laptops
 ====================================
 
-Download copies of all current workshops: **TODO**
+Here are instructions on how I set up our loaner laptops.
 
-Default user account
---------------------
+
+Quick facts: What is the default user account?
+----------------------------------------------
 
 Username: `Learner`
 Password: `canadalearningcode`
 
- - Background: Canada Learning Code logo
- - Desktop: icons for Chromium, Atom, Repl.it, IDLE
 
-Install
--------
+Why set up the laptops with Lubuntu?
+------------------------------------
 
-Run `./install-all`
+Running Windows 10 on the 32GB HP Stream was painful; they hardly had
+enough storage to download Windows 10 updates. We got "disk out of
+space" error messages when saving text files.
 
-Package list
-------------
+[Lubuntu][] is a small, lightweight distribution of Linux, based on
+Ubuntu, with a bare bones desktop environment. The installation of
+Lubuntu with all required software used under 6 GiB of storage.
+
+
+
+Packages required for workshops
 
  - Chromium
-    - \*
- - Scratch 2
-    - Gamemaking and Circuitry with Scratch & MaKey MaKey
- - Ruby
-    - Ruby workshop
- - Python 3
  - Atom
-    - HTML & CSS for Beginners: Learn to Build a Multi-Page Website from Scratch
-    - Webmaking with HTML & CSS
- - Processing — Setup on Linux is tricky!
+ - Python 3
+ - Ruby (as offline contingency during for the Repl.it Ruby workshop)
+ - Scratch 2 (as offline contingency during for the Scratch workshops)
+ - ~~Processing~~ (Not installed because set up on Linux is tricky!)
 
 
-Considerations
---------------
+Installing (most) of the required software
+------------------------------------------
 
-Turn off Bluetooth.
-
-Add icons to Desktop.
-
-Updating all of the workshop repositories
------------------------------------------
-
-Run `./update-workshops`
+Run `./install-all`
 
 Instructions
 ------------
 
-To Install Lubuntu on HP Stream 14:
+To install [Lubuntu][] on HP Stream 14:
 
+[Lubuntu]: https://lubuntu.me/
+
+ - Download a 64-bit version of Lubuntu. 32-bit will not work! (due to
+   BIOS/UEFI incompatibility... or something).
+ - Using a tool like [Unetbootin](https://unetbootin.github.io/),
+   write the ISO to a USB drive.
  - <kbd>ESC</kbd> when starting up. Default settings have no delay.
  - Install Lubuntu:
    - English (US) layout
@@ -65,8 +65,12 @@ To Install Lubuntu on HP Stream 14:
     - Right-click » Remove "..." from Panel
  - Turn off screen lock
      - "Start" » Preferences » Power Manager
-        - General: On battery/Plugged in: suspend
-	- Security: Automatically lock the session: never
+         - General: On battery/Plugged in: suspend
+         - Security: Automatically lock the session: never
  - Do not ask for password on login
      - "Start" » System Tools » Users and Groups
         - Learner/Password: Change... » ✔ Don't ask for password on login
+ - Turn off Bluetooth.
+ - Add icons to Desktop.
+ - Background: Canada Learning Code logo
+ - Desktop: icons for Chromium, Atom, Scratch
