@@ -21,14 +21,3 @@ sudo apt install -y "${APT_PACKAGES[@]}"
 
 # Install Atom
 sudo snap install atom --classic
-
-# Install Processing
-installprocessing() {
-    # TODO: verify SHA 384 sum
-    cd /tmp &&\
-        curl -fLo http://download.processing.org/processing-3.4-linux32.tgz &&\
-        tar xzf processing-3.4-linux32.tgz &&\
-        cd /tmp/processing-3.4-linux32 &&\
-        false
-}
-installprocessing

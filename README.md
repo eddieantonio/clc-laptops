@@ -20,17 +20,17 @@ Run `./install-all`
 Package list
 ------------
 
- - Chromium — `apt install chromium-browser`
+ - Chromium
     - \*
- - Scratch 2 — `apt install scratch`
+ - Scratch 2
     - Gamemaking and Circuitry with Scratch & MaKey MaKey
- - Ruby — `apt install ruby`
+ - Ruby
     - Ruby workshop
- - Python 3 `apt install python3`
- - Atom `sudo apt install snap && sudo snap install atom --classic`
+ - Python 3
+ - Atom
     - HTML & CSS for Beginners: Learn to Build a Multi-Page Website from Scratch
     - Webmaking with HTML & CSS
- - Processing — `sudo apt install curl && curl -fLo http://download.processing.org/processing-3.4-linux32.tgz`
+ - Processing — Setup on Linux is tricky!
 
 
 Considerations
@@ -57,7 +57,7 @@ To Install Lubuntu on HP Stream 14:
    - Install third-party software for graphics and Wi-Fi hardware and additional media formats
    - Use LVM with the new Lubuntu installation
    - Computer name: "clc" + what it says on the sticker
-   - Log in automatically 
+   - Log in automatically
  - Disable multiple desktops (confusing when you accidentally scroll on the desktop)
      - "Start" » Preferences » Openbox Configuration Manager » Desktop
  - change boot back to UEFI mode?
